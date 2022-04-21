@@ -1,0 +1,39 @@
+/* 
+	Layout Transitions - Default Class Names from Vue
+	---------------------------------------------------
+	For All pages in the /layouts directory
+*/
+
+body.is-transitioning {
+  overflow: hidden;
+
+  &.stay-fixed {
+    padding-top: var(--nav-top-height);
+
+    #global-nav-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+    }
+  }
+}
+
+.layout-enter-active {
+  transition: all $global-duration $ease-out-sine;
+}
+
+.layout-leave-active {
+  transition: all $global-duration $ease-in-sine;
+}
+
+.layout-enter-to,
+.layout-leave {
+  opacity: 1;
+}
+
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}

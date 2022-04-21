@@ -1,0 +1,35 @@
+/* @import url('//hello.myfonts.net/count/3855c8'); */
+
+@font-face {
+  font-family: 'NeueKabel-Medium';
+  src: url('/fonts/neue-kabel/3855C8_3_0.eot');
+  src: url('/fonts/neue-kabel/3855C8_3_0.eot?#iefix') format('embedded-opentype'), url('/fonts/neue-kabel/3855C8_3_0.woff2') format('woff2'), url('/fonts/neue-kabel/3855C8_3_0.woff') format('woff'), url('/fonts/neue-kabel/3855C8_3_0.ttf') format('truetype');
+}
+
+/* @import url('//hello.myfonts.net/count/382b59'); */
+
+@font-face {
+  font-family: 'TiffanyStd-Italic';
+  src: url('/fonts/tiffany/382B59_0_0.eot');
+  src: url('/fonts/tiffany/382B59_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/tiffany/382B59_0_0.woff2') format('woff2'), url('/fonts/tiffany/382B59_0_0.woff') format('woff'), url('/fonts/tiffany/382B59_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TiffanyStd';
+  src: url('/fonts/tiffany/382B59_1_0.eot');
+  src: url('/fonts/tiffany/382B59_1_0.eot?#iefix') format('embedded-opentype'), url('/fonts/tiffany/382B59_1_0.woff2') format('woff2'), url('/fonts/tiffany/382B59_1_0.woff') format('woff'), url('/fonts/tiffany/382B59_1_0.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'TiffanyStd-Demi';
+  src: url('/fonts/tiffany/38591C_0_0.eot');
+  src: url('/fonts/tiffany/38591C_0_0.eot?#iefix') format('embedded-opentype'), url('/fonts/tiffany/38591C_0_0.woff2') format('woff2'), url('/fonts/tiffany/38591C_0_0.woff') format('woff'), url('/fonts/tiffany/38591C_0_0.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'TiffanyStd-Heavy';
+  src: url('/fonts/tiffany/38591C_1_0.eot');
+  src: url('/fonts/tiffany/38591C_1_0.eot?#iefix') format('embedded-opentype'), url('/fonts/tiffany/38591C_1_0.woff2') format('woff2'), url('/fonts/tiffany/38591C_1_0.woff') format('woff'), url('/fonts/tiffany/38591C_1_0.ttf') format('truetype');
+}

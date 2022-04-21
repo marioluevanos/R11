@@ -1,0 +1,77 @@
+// Easing 
+// -----------------------------------------
+$ease-in-pow3: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-pow3: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+// Fonts
+// -----------------------------------------
+
+// Sans
+$fallback-sans: "Lucida Grande",
+"Lucida STD",
+"Lucida Sans",
+Tahoma,
+'Trebuchet MS',
+Geneva,
+Sans-serif;
+$font-sans-regular: 'NeueKabel-Regular',
+$fallback-sans;
+$font-sans-bold: 'NeueKabel-Bold',
+$fallback-sans;
+$font-sans-semibold: 'NeueKabel-Medium',
+$fallback-sans;
+
+// Serif
+$fallback-serif: "Palatino",
+"Garamond",
+"Georgia",
+Serif;
+$font-serif-regular: 'TiffanyStd',
+$fallback-serif;
+$font-serif-italic: 'TiffanyStd-Italic',
+$fallback-serif;
+$font-serif-semibold: 'TiffanyStd-Demi',
+$fallback-serif;
+$font-serif-bold: 'TiffanyStd-Heavy',
+$fallback-serif;
+
+// Transitions 
+//------------------------------------------
+$global-duration: 0.3s;
+
+// UI
+// -----------------------------------------
+$global-radius: 8px;
+$form-input-height: 70;
+$form-input-min-height: 60px;
+
+// Article Thumbs
+// -----------------------------------------
+$thumb-w-sm: 86;
+$thumb-h-sm: 106;
+
+$thumb-w-md: 110;
+$thumb-h-md: 135;
+
+$thumb-w-lg: 260;
+$thumb-h-lg: 320;
+
+// Breakpoints
+// -----------------------------------------
+$global-max-width: auto;
+
+// Breakpoints
+$media-1: 321px;
+$media-2: 481px;
+$media-3: 768px;
+$media-4: 1024px;
+$media-5: 1280px;
+$media-6: 1440px;
+$media-7: 1920px;

@@ -1,0 +1,26 @@
+/* @import must be at top of file, otherwise CSS will not work */
+
+$dir: '/fonts/';
+$sans: 'neue-kabel';
+$serif: 'tiffany';
+
+/*
+  These fonts are critical and are viewed above the fold
+  - -
+  All other fonts moved to static folder:
+  "/static/styles/css/font.css" so they can load
+  after the page has loaded. Other fonts not
+  listed here are non critical.
+*/
+
+@font-face {
+  font-display: swap;
+  font-family: 'NeueKabel-Bold';
+  src: url($dir + $sans + '/3855C8_0_0.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'NeueKabel-Regular';
+  src: url($dir + $sans + '/3855C8_2_0.woff2') format('woff2');
+}

@@ -1,0 +1,24 @@
+:root {
+  --gutter: 15;
+  --gutted: calc(var(--gutter)/var(--dw) * 100vw);
+  --sh: calc(var(--vhunit, 1vh) * 100);
+  --nav-height: calc(var(--nav-top-height) + var(--nav-bottom-height));
+  --nav-top-height: 50;
+  --dw: 375;
+  --dh: 812;
+
+  @include media(3-up) {
+    --nav-bottom-height: 60;
+    --gutter: 60;
+    --dw: 1280;
+    --dh: 800;
+  }
+
+  @include media(4-up) {
+    --gutter: 64;
+    --nav-top-height: 100;
+    --nav-bottom-height: 50;
+    --dw: 1440;
+    --dh: 900;
+  }
+}

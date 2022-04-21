@@ -1,0 +1,109 @@
+@mixin dark-mode() {
+  // UI
+  --color-bg: hsl(287, 30%, 7%);
+  --color-bg1: hsl(287, 60%, 4%);
+  --color-bg2: hsl(287, 20%, 6%);
+  --color-text: hsl(0, 5%, 75%);
+  --color-border: hsl(287, 12%, 20%);
+  --color-icon: var(--color-gray);
+  --color-link: var(--color-peach);
+  --color-disabled: var(--color-gray-dark);
+  --color-nav-active: var(--color-plum-dark);
+
+  // Singular Color
+  --color-red: hsl(2, 50%, 61%);
+  --color-green: hsl(157, 45%, 80%);
+  --color-peach: hsl(17, 40%, 80%);
+  --color-primary: hsl(287, 50%, 48%);
+  --color-lavender: hsl(311, 10%, 65%);
+  --color-plum: hsl(286, 50%, 12%);
+  --color-plum-dark: hsl(290, 80%, 8%);
+  --color-purple: hsl(282, 80%, 15%);
+  --color-purple-light: hsl(282, 65%, 22%);
+  --color-purple-dark: hsl(287, 100%, 8%);
+  --color-maroon: hsl(277, 20%, 56%);
+  --color-magenta: hsl(290, 49%, 12%);
+  --color-magenta-light: hsl(290, 49%, 16%);
+
+  // Grays
+  --color-gray: hsl(311, 5%, 48%);
+  --color-gray-light: hsl(286, 5%, 60%);
+  --color-gray-dark: hsla(288, 5%, 7%, 1);
+
+  // Gradient
+  --gradient-gray: linear-gradient(-245deg, #{var(--color-plum)} 0%, #{var(--color-bg)} 95%);
+  --gradient-magenta: linear-gradient(26deg, #{var(--color-magenta-light)} 0%, #{var(--color-gray-dark)} 100%);
+  --gradient-purple: linear-gradient(243deg, #{var(--color-purple-dark)} 0%, #{var(--color-plum)} 95%);
+
+  img {
+    filter: brightness(0.66) contrast(0.9);
+  }
+}
+
+@mixin light-mode() {
+  --color-lavender: hsl(311, 9%, 82%);
+  --color-maroon: hsl(307, 90%, 16%);
+  --color-magenta: hsl(307, 48%, 34%);
+  --color-magenta-light: hsl(310, 19%, 88%);
+
+  --color-purple-light: hsl(287, 70%, 30%);
+  --color-purple-dark: hsl(287, 50%, 10%);
+  --color-purple: hsl(287, 91%, 18%);
+
+  --color-plum: hsl(286, 80%, 14%);
+  --color-plum-light: hsl(289, 23%, 14%);
+  --color-plum-dark: hsl(290, 50%, 10%);
+
+  --color-primary: hsl(287, 91%, 18%);
+
+  // Action Colors
+  --color-red: hsl(2, 39%, 51%);
+  --color-green: hsl(158, 12%, 85%);
+  --color-peach: hsl(17, 25%, 40%);
+
+  // UI
+  --color-bg: hsl(280, 3%, 95%);
+  --color-bg1: hsl(280, 3%, 92%);
+  --color-bg2: hsl(280, 4%, 87%);
+  --color-text: hsl(287, 33%, 11%);
+  --color-border: hsl(280, 6%, 82%);
+  --color-icon: hsl(287, 91%, 24%);
+  --color-link: hsl(17, 25%, 40%);
+  --color-disabled: var(--color-gray-light);
+  --color-nav-active: var(--color-bg2);
+
+  // Grays
+  --color-gray: hsl(280, 10%, 40%);
+  --color-gray-light: hsl(280, 6%, 87%);
+  --color-gray-dark: hsl(288, 11%, 18%);
+
+  // Gradient
+  --gradient-gray: linear-gradient(-245deg, white 0%, #{var(--color-gray-light)} 95%);
+  --gradient-purple: linear-gradient(243deg, #{var(--color-plum)} 0%, #{var(--color-plum-light)} 95%);
+  --gradient-magenta: linear-gradient(26deg, #{var(--color-purple-dark)} 0%, #{var(--color-maroon)} 100%);
+
+  img {
+    filter: none;
+  }
+}
+
+// Theme
+:root {
+  color-scheme: light dark;
+
+  &.dark-mode {
+    @include dark-mode;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @include dark-mode;
+  }
+
+  &.light-mode {
+    @include light-mode;
+  }
+
+  @media (prefers-color-scheme: light) {
+    @include light-mode;
+  }
+}

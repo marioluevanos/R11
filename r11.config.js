@@ -1,0 +1,82 @@
+require("dotenv").config();
+const www = process.env.WWW_URL;
+const devMode = process.env.NODE_ENV !== "production";
+const cloudUrl = process.env.CLOUD_URL;
+
+// devMode
+//   ? "http://localhost:5001/residence-11/us-central1"
+//   : process.env.CLOUD_URL;
+
+module.exports = {
+  title: "Residence 11",
+  shortName: "R11",
+  brandingWords:
+    "Love, Relationships, New Age of Human Connection, Freedom & Fulfillment",
+  description:
+    "Residence 11 celebrates sensuality, sexuality, romance, and loving in a new age of human communication. We help readers find a more healthy, honest, joyful and fulfilling physical and spiritual communication in their relationships.",
+  ogImage: www + "/og-image.jpg",
+  apiUrl: process.env.API_URL,
+  cloudUrl: cloudUrl,
+  wwwUrl: www,
+  logoImage: www + "/icon.png",
+  keyWords: [
+    "Ethical",
+    "Non-Monogamy",
+    "Affirmation",
+    "Desire",
+    "Dreaming",
+    "Sex",
+    "Relationship",
+    "AI",
+    "Conversation",
+    "Polyamory",
+    "Virtual",
+    "Reality",
+    "Positive",
+    "Transgender",
+    "Review",
+    "Evolution",
+    "Empowerment",
+    "Fan-Fiction",
+    "Gender",
+    "Neutral",
+    "Radical",
+    "Intimacy",
+    "Overcoming",
+    "Serene",
+    "Toys",
+    "Writing",
+    "Jealousy",
+    "Experience",
+    "Orgasms",
+    "IQ",
+    "Erotic",
+    "LGBTQ",
+    "Dating",
+    "RPGs",
+    "Pleasure",
+    "Love",
+    "Senses",
+    "Buddhism",
+    "Revolution",
+    "Nerd",
+    "Disability",
+    "Stereotypes",
+    "R11",
+  ],
+  color: {
+    purple: "#450457",
+    lavender: "#A695A3",
+    maroon: "#4D0445",
+    magenta: "#802D76",
+    magentaLight: "#E6DAE4",
+    purpleDark: "#280033",
+    plum: "#221326",
+    red: "#B35451",
+    green: "#8CFFD4",
+    white: "#f2f2f2",
+    gray: "#999",
+    grayLight: "#e6e4e7",
+    grayDark: "#312933",
+  },
+};
